@@ -27,7 +27,7 @@ x_train = df.iloc[:split_num]
 X_test_raw = df.iloc[split_num:]
 
 y_train = y[:split_num]
-y_test = y[split_num:]
+y_test = y[split_num:] 
 
 # Feature Scaling: Making sure all features are in the right and similar range expect Binary ones obviously, going for Z-score normalization i.e. standardization
 
@@ -133,4 +133,4 @@ print(b)
 # HOLIDAY:  85034.80628138]
 # BIAS: 1129251.0963336367
 
-# Note: IS HIGHLY INACCURATE DUE TO 
+# Note: IS HIGHLY INACCURATE DUE TO SOME REASONS NEITHER I NOR EVERY LLM CAN FIND. THE MATH IS GOOD (ALTHOUGH THE NORMALIZATION METHOD IS SHIT.)
